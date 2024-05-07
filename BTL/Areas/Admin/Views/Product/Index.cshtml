@@ -1,0 +1,213 @@
+﻿@model IEnumerable<ProductModel>
+@{
+    ViewData["title"] = "Product Listed";
+}
+<style>
+    img {
+        width: 90%;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<h3>List Products</h3>
+
+
+@* <div class="features_items">
+    <!--features_items-->
+
+
+</div>
+<div id="pagination">
+    <ul class="pagination">
+    </ul>
+</div> *@
+
+ <table class="table"> 
+
+    <thead>
+
+        <tr>
+
+            <th scope="col">Product Action</th>
+            <th scope="col">#</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Image</th>
+            @* <th scope="col">Product Quantity</th>
+            <th scope="col">Product Slug</th>
+            <th scope="col">Product Category</th>
+            <th scope="col">Product Brand</th>
+            <th scope="col">Product Status</th>  *@
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Edit" class="btn btn-warning btn-sm " asp-controller="Product" asp-route-Id="@item.Id">Edit</a>
+                    <a asp-action="Delete" class="btn btn-danger btn-sm confirmDeletion" asp-controller="Product" asp-route-Id="@item.Id">Delete</a>
+                </td>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td><img src="~/media/products/@item.Image"></img></td>
+                @* <td>@item.Quantity</td>
+                <td>@item.Slug</td>
+                <td>@item.Category.Name</td>
+                <td>@item.Brand.Name</td>
+                <td>
+                    @if (@item.Status == 1)
+                    {
+                        <form class="change-status-form" data-product-id="@item.Id" data-current-status="1">
+                            <button type="button" class="change-status-btn btn btn-danger btn-sm">Ẩn</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form class="change-status-form" data-product-id="@item.Id" data-current-status="0">
+                            <button type="button" class="change-status-btn btn btn-warning btn-sm">Hiển thị</button>
+                        </form>
+                    }
+                </td>  *@
+                
+
+            </tr>
+        }
+        
+    </tbody>
+</table> 
+
+
+<script>
+    $(document).ready(function () {
+        $('.change-status-btn').click(function () {
+            var button = $(this); // Lưu tham chiếu của nút
+
+            var productId = button.closest('form').data('product-id');
+            var currentStatus = button.closest('form').data('current-status');
+            var newStatus = currentStatus === 0 ? 1 : 0;
+
+            $.ajax({
+                url: '@Url.Action("ChangeStatus", "Product")',
+                type: 'POST',
+                dataType: 'json',
+                data: { productId: productId, newStatus: newStatus },
+                success: function (response) {
+                    if (response.status === 0) {
+                        // Update button for showing
+                        button.removeClass('btn-danger').addClass('btn-warning').text('Hiển thị');
+                    } else {
+                        // Update button for hiding
+                        button.removeClass('btn-warning').addClass('btn-danger').text('Ẩn');
+                    }
+                    button.closest('form').data('current-status', newStatus);
+                }
+            });
+        });
+    });
+
+    
+</script>
+
+@*  <script>
+    function Pagination(currentPage, totalPages, action) {
+        var paginationHtml = '<ul class="pagination">';
+        if (totalPages > 1) {
+            paginationHtml += '<li class="page-item ' + (currentPage === 1 ? 'disabled' : '') + '">';
+            paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+            paginationHtml += 'onclick="' + (currentPage !== 1 ? action(currentPage - 1) : '') + '">Previous</a></li>';
+
+            for (var i = 1; i <= totalPages; i++) {
+                paginationHtml += '<li class="page-item ' + (currentPage === i ? 'active' : '') + '">';
+                paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+                paginationHtml += 'onclick="' + action(i) + '">' + i + '</a></li>';
+            }
+
+            paginationHtml += '<li class="page-item ' + (currentPage === totalPages ? 'disabled' : '') + '">';
+            paginationHtml += '<a class="page-link" href="javascript:void(0);" ';
+            paginationHtml += 'onclick="' + (currentPage !== totalPages ? action(currentPage + 1) : '') + '">Next</a></li>';
+        }
+        paginationHtml += '</ul>';
+
+        var paginationDiv = document.getElementById('pagination');
+        paginationDiv.innerHTML = paginationHtml;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loadProducts(1);
+    });
+
+    function loadProducts(page) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/Admin/Product/GetList?page=" + page, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var result = JSON.parse(xhr.responseText);
+                // Cập nhật UI với dữ liệu mới
+                updateUI(result);
+                // Tạo phân trang với các sự kiện onclick đã được điều chỉnh
+                Pagination(result.currentPage, result.totalPages, function (newPage) {
+                    return "loadProducts(" + newPage + ")";
+                });
+            }
+        };
+        xhr.send();
+    }
+
+    function updateUI(result) {
+        var featuresItems = document.querySelector('.features_items');
+        featuresItems.innerHTML = ''; // Xóa nội dung cũ
+        result.data.forEach(function (item) {
+            var productHtml = '<div class="product-container">' +
+                '<div class="product-image-wrapper">' +
+                '<div class="single-products">' +
+                '<div class="productinfo text-center">' +
+                '<a href="/Admin/Product/Edit/' + item.id + '">' +
+                '<img src="/media/products/' + item.image + '" alt="' + item.name + '" width="100%" />' +
+                '<h2>' + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + '</h2>' +
+                '<p>' + item.name + '</p>' +
+                '<p>Danh mục: ' + item.category.name + '</p>' +
+                '<p>Thương hiệu: ' + item.brand.name + '</p>' +
+                '<p>Số lượng: ' + item.quantity + '</p>' +
+                '</a>' +
+                '<a class="btn btn-warning btn-sm" href="/Admin/Product/Edit/' + item.id + '"> Edit </a>' +
+                '<a class="btn btn-danger btn-sm confirmDeletion" href="/Admin/Product/Delete/' + item.id + '"> Delete </a>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+            featuresItems.insertAdjacentHTML('beforeend', productHtml);
+        });
+        var deleteButtons = document.querySelectorAll('.confirmDeletion');
+        deleteButtons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                confirmDeletion(event, button.getAttribute('href'));
+            });
+        });
+    }
+    function confirmDeletion(event, deleteUrl) {
+        event.preventDefault();
+        if (confirm("Bạn có chắc muốn xóa mục này không?")) {
+            // Sử dụng AJAX để gửi yêu cầu xóa đến máy chủ
+            var xhr = new XMLHttpRequest();
+            xhr.open('DELETE', deleteUrl);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Nếu xóa thành công, load lại danh sách sản phẩm mà không cần tải lại trang
+                    loadProducts(1);
+                } else {
+                    // Xử lý lỗi nếu có
+                    console.error('Đã xảy ra lỗi khi xóa sản phẩm.');
+                }
+            };
+            xhr.send();
+        }
+    }
+</script>  *@
+
+
+

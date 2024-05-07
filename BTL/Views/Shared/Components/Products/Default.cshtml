@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ProductModel>
+
+@foreach(var item in Model)
+{
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">@if (item.Status == 1)
+				{
+					<a asp-action="Create" asp-controller="Product" asp-route-Slug="@item.Slug">
+						@item.Name
+					</a>
+				}
+			</h4>
+		</div>
+	</div>
+}

@@ -1,0 +1,702 @@
+﻿@{
+	var cartvm = ViewData["CartCount"];
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Home | E-Shopper</title>
+	<link href="~/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+	<link href="~/css/prettyPhoto.css" rel="stylesheet">
+	<link href="~/css/price-range.css" rel="stylesheet">
+	<link href="~/css/animate.css" rel="stylesheet">
+	<link href="~/css/main.css" rel="stylesheet">
+	<link href="~/css/responsive.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<style>
+		.cart-item-number
+		{
+			color: red; /* Màu chữ đỏ */
+		}
+		.brands-name
+		{
+			padding: 0;
+		}
+
+		.category-products
+		{
+			margin: 0;
+		}
+
+		.carousel-inner{
+			height:450px;
+		}
+
+		.container .col-sm-3:first-child
+		{
+			border-right: solid 1px #ccc;
+		}
+
+		.footer-top .col-sm-3:first-child
+		{
+			border:none;
+		}
+		div#pagination
+		{
+			text-align: center;
+		}
+
+		.search-results
+		{
+			max-height: 300px; /* Chiều cao tối đa của vùng kết quả */
+			overflow-y: auto; /* Tạo thanh cuộn dọc khi nội dung vượt quá kích thước */
+		}
+		#searchResults
+		{
+			position: absolute;
+			top: calc(100% + 10px);
+			left: 0;
+			z-index: 999;
+			background-color: white;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+			display: none;
+		}
+
+		#searchResults ul
+		{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#searchResults ul li
+		{
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+		}
+
+		#searchResults ul li:last-child
+		{
+			border-bottom: none;
+		}
+
+		#searchResults ul li a
+		{
+			text-decoration: none;
+			color: #333;
+		}
+
+		#searchResults ul li a:hover
+		{
+			color: #007bff;
+		}
+		.product-item
+		{
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px; /* Khoảng cách giữa các sản phẩm */
+		}
+
+		.product-link
+		{
+			text-decoration: none;
+			color: inherit;
+			display: flex;
+			align-items: center;
+		}
+
+		.product-image
+		{
+			width: 100px; /* Độ rộng của ảnh */
+			height: auto;
+			margin-right: 10px; /* Khoảng cách giữa ảnh và nội dung */
+		}
+
+		.product-info
+		{
+			flex: 1; /* Để nội dung linh hoạt, co giãn để lấp đầy không gian còn trống */
+		}
+
+		.product-name
+		{
+			margin: 0;
+			font-size: 14px; /* Kích thước chữ */
+		}
+
+		.product-price
+		{
+			margin: 0;
+			font-size: 14px; /* Kích thước chữ */
+			color: red; /* Màu chữ */
+		}
+
+		.search_box
+		{
+			position: relative;
+		}
+
+		#searchInput
+		{
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			outline: none;
+		}
+
+		#searchResults
+		{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			z-index: 1;
+		}
+
+		.product-item
+		{
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+		}
+
+		.product-link
+		{
+			display: flex;
+			text-decoration: none;
+			color: #333;
+		}
+
+		.product-image
+		{
+			width: 80px;
+			height: 80px;
+			margin-right: 10px;
+		}
+
+		.product-info
+		{
+			flex-grow: 1;
+		}
+
+		.product-name
+		{
+			margin: 0 0 5px;
+			font-size: 14px;
+		}
+
+		.product-price
+		{
+			margin: 0;
+			font-size: 16px;
+			color: red;
+		}
+
+		.show-more
+		{
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+
+		.show-more button
+		{
+			padding: 8px 16px;
+			border: none;
+			background-color: #007bff;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+			border-radius: 4px;
+			outline: none;
+		}
+
+		.show-more button:hover
+		{
+			background-color: #0056b3;
+		}
+
+		.search_box input
+		{
+			color: #000; /* Màu chữ đen */
+			/* Các thuộc tính khác của ô input */
+		}
+
+
+	</style>
+</head><!--/head-->
+
+<body>
+	<header id="header">
+		<!--header-->
+		<div class="header_top">
+			<!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +84 95 01 88 21</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+
+		<div class="header-middle">
+			<!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a asp-action="Index" asp-controller="Home"><img src="~/images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									VN
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">VN</a></li>
+									<li><a href="#">UK</a></li>
+								</ul>
+							</div>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									VNĐ
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">VNĐ</a></li>
+									<li><a href="#">DOLLAR</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								
+								<li><a asp-controller="Cart"><i class="fa fa-shopping-cart"></i> Cart (<span class="cart-item-number">@cartvm</span>)</a></li>
+								@if (User.Identity.Name=="admin")
+								{
+									<li><a asp-controller="Admin">Admin Page</a></li>
+								}
+								@if (!string.IsNullOrEmpty(User.Identity.Name))
+								{
+									<li><a  asp-controller="Order"><i class="fa fa-user"></i>Hi @User.Identity.Name </a></li>
+									<li><a asp-action="ChangePassword" asp-controller="Account"><i class="fa fa-lock"></i> ChangePassword</a></li>
+									<li><a asp-action="Logout" asp-controller="Account"><i class="fa fa-lock"></i> Logout</a></li>
+								}else{
+									<li><a asp-action="Login" asp-controller="Account"><i class="fa fa-lock"></i> Login</a></li>
+								}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+
+		<div class="header-bottom">
+			<!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a asp-controller="Home" asp-action="Index" class="active">Home</a></li>
+								<li class="dropdown">
+									<a  href="#">Shop<i class="fa fa-angle-down"></i></a>
+									<ul role="menu" class="sub-menu">
+										<li><a asp-action="Checkout" asp-controller="Checkout">Order Details</a></li>
+										<li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
+									</ul>
+								</li>
+								
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="search_box pull-right">
+							<input type="text" placeholder="Search" id="searchInput" onkeyup="searchProducts(this.value)" onkeypress="handleKeyPress(event)" />
+						</div>
+						<!-- Thêm một div bao quanh #searchResults để sử dụng thanh cuộn -->
+						<div class="search-results-container">
+							<div id="searchResults" class="search-results"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+
+	<section id="slider">
+		<!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+							<li data-target="#slider-carousel" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-11">
+									<img src="~/images/slider/sld1.jpg" width="100%" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-11">
+									<img src="~/images/slider/sld2.jpg" width="100%" />
+								</div>
+								
+							</div>
+
+							<div class="item">
+								<div class="col-sm-11">
+									<img src="~/images/slider/sld3.jpg" width="100%" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-11">
+									<img src="~/images/slider/sld4.jpg" width="100%" />
+								</div>
+							</div>
+
+						</div>
+
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				@Html.Partial("_NotificationPartial")
+				@RenderBody()
+				
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>e</span>-shopper</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="~/images/footer/img1.jpg"/>
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="~/images/footer/img2.jpg" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="~/images/footer/img3.jpg" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="~/images/footer/img4.jpg" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="images/home/map.png" alt="" />
+							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Online Help</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Order Status</a></li>
+								<li><a href="#">Change Location</a></li>
+								<li><a href="#">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">T-Shirt</a></li>
+								<li><a href="#">Mens</a></li>
+								<li><a href="#">Womens</a></li>
+								<li><a href="#">Gift Cards</a></li>
+								<li><a href="#">Shoes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privecy Policy</a></li>
+								<li><a href="#">Refund Policy</a></li>
+								<li><a href="#">Billing System</a></li>
+								<li><a href="#">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Company Information</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Store Location</a></li>
+								<li><a href="#">Affillate Program</a></li>
+								<li><a href="#">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+				</div>
+			</div>
+		</div>
+
+	</footer><!--/Footer-->
+
+
+
+	<script src="~/js/jquery.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/jquery.scrollUp.min.js"></script>
+	<script src="~/js/price-range.js"></script>
+	<script src="~/js/jquery.prettyPhoto.js"></script>
+	<script src="~/js/main.js"></script>
+	@await RenderSectionAsync("Scripts",required:false)
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var searchInput = document.getElementById("searchInput");
+			var searchResults = document.getElementById("searchResults");
+			var currentPage = 1; // Trang hiện tại
+			var pageSize = 3; // Số sản phẩm hiển thị trên mỗi trang
+			var totalResults = 0; // Tổng số kết quả
+			var totalPages = 0; // Tổng số trang
+			var currentResults = []; // Danh sách sản phẩm hiện tại
+
+			// Sự kiện input trên input
+			searchInput.addEventListener("input", function () {
+				var searchText = searchInput.value.trim();
+				if (searchText !== "") {
+					// Gửi yêu cầu AJAX để tìm kiếm
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET", "/Home/Search?searchText=" + searchText, true);
+					xhr.setRequestHeader("Content-Type", "application/json");
+					xhr.onreadystatechange = function () {
+						if (xhr.readyState === XMLHttpRequest.DONE) {
+							if (xhr.status === 200) {
+								var response = JSON.parse(xhr.responseText);
+								totalResults = response.length;
+								currentResults = response;
+								totalPages = Math.ceil(totalResults / pageSize);
+								showSearchResults(currentPage);
+							} else {
+								console.error("Error:", xhr.status);
+							}
+						}
+					};
+					xhr.send();
+				} else {
+					hideSearchResults();
+				}
+			});
+
+			// Sự kiện click trên document
+			document.addEventListener("click", function (event) {
+				if (!searchResults.contains(event.target) && !event.target.classList.contains("show-more") && !event.target.classList.contains("show-all")) {
+					hideSearchResults();
+				}
+			});
+
+			searchResults.addEventListener("click", function (event) {
+				if (event.target && event.target.classList.contains("show-more")) {
+					currentPage++;
+					showSearchResults(currentPage);
+				}
+			});
+
+			function handleKeyPress(event) {
+				// Kiểm tra xem phím đã được ấn có phải là phím "Enter" không (mã ASCII là 13)
+				if (event.keyCode === 13) {
+					// Lấy giá trị từ input và thực hiện tìm kiếm
+					var searchText = event.target.value.trim();
+					searchProducts(searchText);
+				}
+			}
+
+			function showSearchResults() {
+				var resultList = "";
+				if (currentResults.length > 0) {
+					for (var i = 0; i < currentResults.length; i++) {
+						var item = currentResults[i];
+						resultList += "<div class='product-item'>";
+						resultList += "<a href='/Product/Details/" + item.id + "' class='product-link' data-product-id='" + item.id + "'>";
+						resultList += "<img src='/media/products/" + item.image + "' alt='" + item.name + "' class='product-image'>";
+						resultList += "<div class='product-info'>";
+						resultList += "<h3 class='product-name'>" + item.name + "</h3>";
+						resultList += "<p class='product-price'>Price: " + item.price.toLocaleString('vi', { style: 'currency', currency: 'VND' }) + "</p>";
+						resultList += "</div>";
+						resultList += "</a>";
+						resultList += "</div>";
+					}
+					searchResults.innerHTML = resultList;
+					searchResults.style.display = "block";
+				} else {
+					hideSearchResults();
+				}
+			}
+
+			function hideSearchResults() {
+				searchResults.innerHTML = "";
+				searchResults.style.display = "none";
+			}
+
+		});
+
+	</script>
+
+
+
+
+</body>
+</html>
+

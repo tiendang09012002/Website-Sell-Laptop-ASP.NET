@@ -1,0 +1,141 @@
+﻿@model ProductModel
+@{
+	var recommended = ViewData["Recommended"];
+}
+<div class="row">
+	<div class="col-sm-3">
+		@Html.Partial("_SidebarPartial")
+	</div>
+	<style>
+		.view-product img {
+			
+			height: 350px;
+			width: 100%;
+		}
+
+		.description{
+			background-color:white;
+			list-style-type: circle;
+			color:white;
+		}
+
+		.category-tab ul
+		{
+			background: #555;
+		}
+	</style>
+	<div class="col-sm-9 padding-right">
+		<div class="product-details">
+			<!--product-details-->
+			<div class="col-sm-5">
+				<div class="view-product">
+					<img width="200px" height="200px" src="~/media/products/@Model.Image" alt="" />
+					
+				</div>
+
+			</div>
+			<div class="col-sm-7">
+				<div class="product-information">
+					<!--/product-information-->
+					@* <img src="~/images/@Model.Image" class="newarrival" alt="@Model.Name" /> *@
+					<h2>@Model.Name</h2>
+					@* <img src="~/images/@Model.Image" alt="" /> *@
+					<span>
+						<span>@Model.Price.ToString("#,##0") VND</span>
+						
+					</span>
+					<p><b>Availability:</b></p>
+					<p><b>Condition:</b> New</p>
+					<p><b>Brand:</b> @Model.Brand.Name</p>
+					<span>
+						<label>Quantity: @Model.Quantity</label>
+						<input type="text" value="1" />
+						<button type="button" class="btn btn-fefault cart">
+							<i class="fa fa-shopping-cart"></i>
+							Add to cart
+						</button>
+					</span>
+					<a href=""><img src="images/product-details/share.png" class="share img-responsive" alt="" /></a>
+				</div><!--/product-information-->
+			</div>
+		</div><!--/product-details-->
+
+		<div class="category-tab shop-details-tab">
+			<!--category-tab-->
+			<div class="col-sm-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+					<li><a href="#companyprofile" data-toggle="tab">Company Profile</a></li>
+					<li><a href="#tag" data-toggle="tab">Tag</a></li>
+					<li><a href="#reviews" data-toggle="tab">Reviews (5)</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade active in" id="details">
+					
+				</div>
+				<div class="description">
+					<ul>
+						@foreach (var item in Model.Description.Split(','))
+						{
+							<li>@item</li>
+						}
+					</ul>
+				</div>
+
+			</div>
+		</div><!--/category-tab-->
+
+		<div class="recommended_items">
+			<!--recommended_items-->
+			<h2 class="title text-center">recommended items</h2>
+
+			<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					
+					@foreach (var item in ViewBag.RecommendedItems)
+					{
+						<div class="item active">
+							<div class="col-sm-4">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="~/media/products/@item.Image" alt="" />
+											<h2>@item.Price</h2>
+											<p>@item.Name</p>
+											<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+					@foreach (var item in ViewBag.RecommendedItems)
+					{
+						<div class="item active">
+							<div class="col-sm-4">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="~/media/products/@item.Image" alt="" />
+											<h2>@item.Price</h2>
+											<p>@item.Name</p>
+											<button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+				<a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div><!--/recommended_items-->
+
+	</div>
+</div>

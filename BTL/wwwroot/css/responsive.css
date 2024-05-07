@@ -1,0 +1,109 @@
+/* PC */
+@media (min-width: 992px) {
+    .product-container {
+        float: left;
+        width: 33.333%;
+    }
+
+    .product-image-wrapper {
+        height: 550px;
+    }
+
+    .productinfo img {
+        width: 80%;
+    }
+}
+
+/*/ Phone */
+@media (max-width: 480px) {
+    .mainmenu {
+        width: 100%;
+    }
+
+        .mainmenu ul li {
+            background: rgba(0, 0, 0, 0.5);
+            padding-top: 15px;
+            padding-bottom: 0;
+        }
+
+            .mainmenu ul li a {
+                color: #FFF;
+                padding-bottom: 0;
+            }
+
+    .dropdown .fa-angle-down {
+        display: none;
+    }
+
+    ul.sub-menu {
+        position: relative;
+        width: auto;
+        display: block;
+        background: transparent;
+        box-shadow: none;
+        top: 0;
+    }
+
+    .mainmenu .navbar-nav li ul.sub-menu li {
+        background: transparent;
+        padding-bottom: 0;
+    }
+
+    #searchInput {
+        position: relative;
+    }
+
+    div#searchResults {
+        position: absolute;
+        top: 50px;
+        z-index: 999;
+    }
+
+    #slider {
+        display: none;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    .product-image-wrapper {
+        height: 450px;
+    }
+
+    .productinfo img {
+        width: 60%;
+    }
+
+    .video-gallery {
+        display: none;
+    }
+
+    .footer-widget .col-sm-2 {
+        width: 50%;
+        display: flex;
+        margin-bottom: 50px;
+        margin-top: 0;
+        float: left;
+        padding-right: 0;
+        padding-left: 30px;
+        margin-left: 0;
+    }
+}
+
+
+/* Ipad*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .product-container {
+        float: left;
+        width: 50%;
+    }
+
+    .productinfo img {
+        width: 80%;
+    }
+
+    .product-image-wrapper {
+        height: 450px;
+    }
+}

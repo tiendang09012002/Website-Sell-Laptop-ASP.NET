@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProductModel>
+@{
+	var firstItem = Model.FirstOrDefault(); // Lấy ra phần tử đầu tiên trong mảng
+	string brandName = firstItem != null ? firstItem.Brand.Name : "Unknown Brand";
+}
+<div class="col-sm-3">
+	@Html.Partial("_SidebarPartial")
+</div>
+<style>
+	.product-image-wrapper {
+		height: 450px;
+	}
+</style>
+<div class="col-sm-9 padding-right">
+	<div class="features_items">
+		<!--features_items-->
+		<h2 class="title text-center">@brandName</h2>
+		
+		@foreach (var item in Model)
+		{
+			<div class="col-sm-4">
+				<div class="product-image-wrapper">
+					<a href="">
+						<div class="single-products">
+							<div class="productinfo text-center">
+								<a asp-action="Details" asp-controller="Product" asp-route-Id="@item.Id">
+									<img src="~/media/products/@item.Image" alt="@item.Name" width="100%" />
+									<h2>@item.Price.ToString("#,##0") VNĐ</h2>
+									<p>@item.Name</p>
+									<p>Danh mục: @item.Category.Name</p>
+									<p>Thương hiệu: @item.Brand.Name</p>
+									
+								</a>
+								<a class="btn btn-default add-to-cart" asp-action="Add" asp-controller="Cart" asp-route-Id="@item.Id"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+							</div>
+							@* <div class="product-overlay">
+						<div class="overlay-content">
+						<h2>$@item.Price</h2>
+						<p>@item.Name</p>
+						<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+						</div>
+						</div> *@
+						</div>
+					</a>
+				</div>
+			</div>
+		}
+		
+
+	</div><!--features_items-->
+	<div id="pagination">
+		<ul class="pagination">
+			<li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
+			<li class="page-item active"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+		</ul>
+	</div>
+</div>

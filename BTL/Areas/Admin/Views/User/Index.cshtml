@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BTL.Models.Domain.ApplicationUser>
+@{
+    ViewData["title"] = "Users Listed";
+}
+
+<h3>List Users</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">User Name</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            @* <th scope="col">Status</th> *@
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.UserName</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Email</td>
+
+                @* <td>
+                    @if (!item.LockoutEnabled)
+                    {
+                        <form method="post" asp-action="ChangeUserStatus" asp-route-userId="@item.Id">
+                            <button type="submit" class="btn btn-danger btn-sm">Block</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" asp-action="ChangeUserStatus" asp-route-userId="@item.Id">
+                            <button type="submit" class="btn btn-warning btn-sm">Allow</button>
+                        </form>
+                    }   
+                </td> *@
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+

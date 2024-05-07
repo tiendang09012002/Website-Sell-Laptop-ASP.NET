@@ -1,0 +1,100 @@
+﻿@using BTL.Models.ViewModels
+@model CartItemViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<style>
+	.cart_product img {
+		width: 200px;
+	}
+
+	td.cart_product
+	{
+		margin:0;
+	}
+
+	td a.btn.btn-danger.btn-sm
+	{
+		margin-left:80px;
+	}
+
+	td a.btn.btn-primary.btn-sm
+	{
+		margin:0;
+	}
+	
+</style>
+<h4>Cart Page</h4>
+@{
+}
+<section id="cart_items">
+	<div class="container">
+		<div class="breadcrumbs">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li class="active">Shopping Cart</li>
+			</ol>
+		</div>
+		<div class="table-responsive cart_info">
+			<table class="table table-condensed">
+				<thead>
+					<tr class="cart_menu">
+						<td class="image">Item</td>
+						<td class="name">Name</td>
+						
+						<td class="price">Price</td>
+						<td class="quantity">Quantity</td>
+						<td class="total">Total</td>
+						<td></td>
+					</tr>
+				</thead>
+				<tbody>
+					@if (Model.CartItems.Count > 0)
+					{
+						@foreach (var iteam in Model.CartItems)
+						{
+							<tr>
+								<td class="cart_product">
+									<a href=""><img src="~/media/products/@iteam.Image" alt=""></a>
+								</td>
+								<td class="cart_name">
+									<p>@iteam.ProductName</p>
+								</td>
+								
+								<td class="cart_price">
+									<p>@iteam.Price.ToString("#,##0") VNĐ</p>
+								</td>
+								<td>
+
+									<a class="btn btn-default btn-sm" asp-controller="Cart" asp-action="Increase" asp-route-id="@iteam.ProductId"> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="@iteam.Quantity" autocomplete="off" size="2">
+									<a class="btn btn-success btn-sm" asp-controller="Cart" asp-action="Decrease" asp-route-id="@iteam.ProductId"> - </a>
+									<a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Remove" asp-route-id="@iteam.ProductId"> Remove </a>
+
+								</td>
+								<td class="cart_total">
+									<p class="cart_total_price">@Model.CartItems.Where(x => x.ProductId == iteam.ProductId).Sum(x => x.Quantity * x.Price).ToString("#,##0")</p>
+								</td>
+							</tr>
+						}
+						<tr rowspan="4">
+							<td colspan="4">Grand Total: <p class="cart_total_price"> @Model.GrandTotal.ToString("#,##0") VNĐ</p></td>
+							<td><a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="Clear"> Clear </a></td>
+							@if (Model.CartItems.Count > 0 && User.Identity.IsAuthenticated)
+							{
+								<td><a class="btn btn-primary btn-sm" asp-controller="Checkout" asp-action="Checkout"> Checkout </a></td>
+							}
+							
+						</tr>
+					}
+					else
+					{
+						<tr>
+							<td colspan="5"><h4> Your Cart is Empty.</h4></td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section> <!--/#cart_items-->

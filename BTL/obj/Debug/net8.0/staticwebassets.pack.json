@@ -1,0 +1,665 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BTL.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BTL.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\backend\\js\\site.js",
+      "PackagePath": "staticwebassets\\backend\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\prettyPhoto.css",
+      "PackagePath": "staticwebassets\\css\\prettyPhoto.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\price-range.css",
+      "PackagePath": "staticwebassets\\css\\price-range.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\404\\404.png",
+      "PackagePath": "staticwebassets\\images\\404\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\blog-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\blog-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\blog-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\blog-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\man-four.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-four.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\man-one.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\man-three.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\man-two.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\man-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\blog\\socials.png",
+      "PackagePath": "staticwebassets\\images\\blog\\socials.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\cart\\one.png",
+      "PackagePath": "staticwebassets\\images\\cart\\one.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\cart\\three.png",
+      "PackagePath": "staticwebassets\\images\\cart\\three.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\cart\\two.png",
+      "PackagePath": "staticwebassets\\images\\cart\\two.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\footer\\img1.jpg",
+      "PackagePath": "staticwebassets\\images\\footer\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\footer\\img2.jpg",
+      "PackagePath": "staticwebassets\\images\\footer\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\footer\\img3.jpg",
+      "PackagePath": "staticwebassets\\images\\footer\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\footer\\img4.jpg",
+      "PackagePath": "staticwebassets\\images\\footer\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\bg_border.png",
+      "PackagePath": "staticwebassets\\images\\home\\bg_border.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\gallery1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\gallery2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\gallery3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\gallery4.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\gallery4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\girl1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\girl2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\girl3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\girl3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\iframe1.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\iframe2.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\iframe3.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\iframe4.png",
+      "PackagePath": "staticwebassets\\images\\home\\iframe4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\logo.png",
+      "PackagePath": "staticwebassets\\images\\home\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\map.png",
+      "PackagePath": "staticwebassets\\images\\home\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\new.png",
+      "PackagePath": "staticwebassets\\images\\home\\new.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\partner1.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\partner2.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\partner3.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\partner4.png",
+      "PackagePath": "staticwebassets\\images\\home\\partner4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\pricing.png",
+      "PackagePath": "staticwebassets\\images\\home\\pricing.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product4.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product5.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\product6.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\product6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\recommend1.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\recommend2.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\recommend3.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\recommend3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\sale.png",
+      "PackagePath": "staticwebassets\\images\\home\\sale.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\searchicon.png",
+      "PackagePath": "staticwebassets\\images\\home\\searchicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\home\\shipping.jpg",
+      "PackagePath": "staticwebassets\\images\\home\\shipping.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\new.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\rating.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\rating.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\share.png",
+      "PackagePath": "staticwebassets\\images\\product-details\\share.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\similar1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\similar2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\product-details\\similar3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\similar3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\advertisement.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\advertisement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product10.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product11.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product12.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product7.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product8.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\shop\\product9.jpg",
+      "PackagePath": "staticwebassets\\images\\shop\\product9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\slider\\sld1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\sld1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\slider\\sld2.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\sld2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\slider\\sld3.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\sld3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\images\\slider\\sld4.jpg",
+      "PackagePath": "staticwebassets\\images\\slider\\sld4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\contact.js",
+      "PackagePath": "staticwebassets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\gmaps.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\html5shiv.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\jquery.prettyPhoto.js",
+      "PackagePath": "staticwebassets\\js\\jquery.prettyPhoto.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\js\\price-range.js",
+      "PackagePath": "staticwebassets\\js\\price-range.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\1.png",
+      "PackagePath": "staticwebassets\\media\\products\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\1b09fbde-768c-4b78-a1eb-551562940492_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\1b09fbde-768c-4b78-a1eb-551562940492_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\2.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\3.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\334e1405-8881-48f1-8430-76a7866a0459_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\334e1405-8881-48f1-8430-76a7866a0459_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\3af31ad0-4040-4d01-b5f7-e1bd6cce26c5_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\3af31ad0-4040-4d01-b5f7-e1bd6cce26c5_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\3ede0d27-cc64-4e62-a4e9-911f2a1f314e_1.png",
+      "PackagePath": "staticwebassets\\media\\products\\3ede0d27-cc64-4e62-a4e9-911f2a1f314e_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\4.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\47f81115-e1de-4f80-b5ca-3cd1a12cf5ed_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\47f81115-e1de-4f80-b5ca-3cd1a12cf5ed_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\4f2f37a0-415f-4eea-9d57-307d493ddc8c_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\4f2f37a0-415f-4eea-9d57-307d493ddc8c_0dba9f36-56eb-47d2-977d-f01d0ad4890f_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\5.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\6.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\7.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\8.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\9.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\b30e06c9-2019-4575-9097-941eeb1777d7_10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\New folder\\BTL_MRTUAN\\BTL\\wwwroot\\media\\products\\caa19a58-15ac-4076-9f21-eb15b0ca78a9_8.jpg",
+      "PackagePath": "staticwebassets\\media\\products\\caa19a58-15ac-4076-9f21-eb15b0ca78a9_8.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BTL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BTL.props",
+      "PackagePath": "build\\BTL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BTL.props",
+      "PackagePath": "buildMultiTargeting\\BTL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BTL.props",
+      "PackagePath": "buildTransitive\\BTL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
